@@ -9,15 +9,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/routes-common.css">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 body{
-  min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  background:#FDFDFB;color:#1C1B19;text-align:center;padding:28px;
+  min-height:100svh;display:flex;flex-direction:column;
+  background:#FDFDFB;color:#1C1B19;text-align:center;
   font-family:"Shippori Mincho",serif;letter-spacing:.06em;
 }
-.logo{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:15px;letter-spacing:.28em;margin-bottom:52px;}
-.logo .dot{color:#2E5A4B;}
+main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:120px 28px 60px;}
+
+.big-logo{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:15px;letter-spacing:.28em;margin-bottom:52px;}
+.big-logo .dot{color:#2E5A4B;}
 .hatena{width:64px;height:auto;margin-bottom:44px;}
 h1{font-weight:600;font-size:clamp(20px,5vw,26px);line-height:2;margin-bottom:14px;}
 p{font-size:14px;color:#77756E;line-height:2.2;margin-bottom:52px;}
@@ -31,14 +34,28 @@ a:focus-visible{outline:2px solid #2E5A4B;outline-offset:3px;}
 </style>
 </head>
 <body>
-  <div class="logo">ROUTES<span class="dot">.</span></div>
+<header>
+  <div class="header-in">
+    <a class="logo" href="/">ROUTES<span class="dot">.</span><span class="beta">&beta;</span></a>
+    <a class="header-cta" href="https://line.me/R/ti/p/@682ijyfy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px;fill:currentColor;"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.41 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1 .88.55 1.08-.46 5.8-3.42 7.92-5.85C21.5 13.5 22 11.9 22 10.13 22 5.64 17.52 2 12 2z"/></svg>LINEで相談する</a>
+  </div>
+</header>
+<main>
+  <div class="big-logo">ROUTES<span class="dot">.</span></div>
   <svg class="hatena" viewBox="0 0 64 100" aria-hidden="true">
-    <path d="M16 26 C16 12 25 5 33 5 C43.5 5 49.5 12.5 49.5 21.5 C49.5 31.5 43 34.5 37.5 39.5 C33.5 43.5 32.5 47.5 32.5 54" stroke="#2E5A4B" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <path d="M15.5 27 C15.5 10 24 3.5 32.5 3.5 C42 3.5 50 10.5 50 21 C50 31 43.5 34.5 38 39.5 C34 43.5 32.5 47.5 32.5 54" stroke="#2E5A4B" stroke-width="4.5" fill="none" stroke-linecap="round"/>
     <circle cx="32.5" cy="76" r="6" fill="#2E5A4B"/>
   </svg>
   <h1>あれれ、ここに道はないみたい 🤔</h1>
   <p>お探しのページは、移動したか、はじめからなかったようです。<br>大丈夫、道はいくらでもあります。</p>
   <a href="/">現在地に戻る</a>
   <div class="code">404 NOT FOUND</div>
+</main>
+<footer>
+  <p class="flogo">ROUTES<span class="dot">.</span></p>
+  <p class="flinks"><a href="/tokushoho.html">特定商取引法に基づく表記</a> ・ <a href="/privacy.html">プライバシーポリシー</a></p>
+  <p>運営：トムトムバーガー企画室🍔</p>
+  <p>&copy; 2026 ROUTES.</p>
+</footer>
 </body>
 </html>
