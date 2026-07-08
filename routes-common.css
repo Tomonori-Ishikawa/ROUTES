@@ -1,0 +1,39 @@
+/* ============================================
+   ROUTES. 共通スタイル（全ページのヘッダー・フッター）
+   ここを直せば index / 404 / 特商法 / プラポリ すべてに反映されます
+============================================ */
+:root{
+  --paper:#FDFDFB;
+  --ink:#1C1B19;
+  --root-green:#2E5A4B;
+  --ash:#77756E;
+  --rule:#E8E6E0;
+  --line-green:#06C755;
+  --sans:"Zen Kaku Gothic New",sans-serif;
+}
+
+/* ---------- header ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  background:rgba(253,253,251,.86);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--rule);
+}
+.header-in{max-width:960px;margin:0 auto;padding:14px 28px;display:flex;justify-content:space-between;align-items:center;}
+.logo{font-family:var(--sans);font-weight:700;font-size:15px;letter-spacing:.28em;text-decoration:none;color:var(--ink);}
+.logo .dot{color:var(--root-green);}
+.logo .beta{font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:.08em;color:var(--ash);margin-left:7px;vertical-align:super;}
+.header-cta{
+  display:inline-flex;align-items:center;gap:7px;
+  font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.12em;
+  text-decoration:none;color:var(--paper);background:var(--ink);
+  padding:9px 18px;border-radius:999px;transition:background .3s;
+}
+.header-cta:hover{background:var(--root-green);}
+
+/* ---------- footer ---------- */
+footer{padding:44px 0;text-align:center;font-family:var(--sans);font-size:11.5px;letter-spacing:.14em;color:var(--ash);}
+footer .flogo{font-weight:700;letter-spacing:.28em;color:var(--ink);}
+footer .flogo .dot{color:var(--root-green);}
+footer p+p{margin-top:8px;}
+.flinks a{color:var(--ash);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:1px;}
+.flinks a:hover{color:var(--root-green);}
