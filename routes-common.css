@@ -1,6 +1,19 @@
 /* ============================================
    ROUTES. 共通スタイル（全ページのヘッダー・フッター）
-   ここを直せば index / 404 / 特商法 / プラポリ すべてに反映されます
+   version 2.0 (2026-07-21) ※ index.html v2.0 と対応
+
+   変更概要:
+     - v2.0 (2026-07-21): デザイントークンに --serif-display / --serif-body を追加。
+       バージョンコメントを追加。適用範囲の注記を実態に合わせて修正。
+     - v1.x: 初期実装
+
+   【適用範囲の注意】
+   このファイルの :root が実際に効くのは、独自の :root を持たない
+   404 / 特商法 / プラポリ の各ページです。
+   index.html は自前の <style> 内で :root を再定義しており（後勝ち）、
+   ここを直しても index には反映されません。
+   色や書体を変える場合は index.html 側の :root も必ずセットで直してください。
+   なお header / footer のスタイルは全ページに反映されます。
 ============================================ */
 :root{
   --paper:#FDFDFB;
@@ -9,6 +22,8 @@
   --ash:#77756E;
   --rule:#E8E6E0;
   --line-green:#06C755;
+  --serif-display:"Shippori Mincho","Noto Serif JP",serif;
+  --serif-body:"Noto Serif JP",serif;
   --sans:"Zen Kaku Gothic New",sans-serif;
 }
 
